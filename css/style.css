@@ -1,13 +1,43 @@
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 /*Header Section*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--whiteColor);
+    z-index: 2;
+    box-shadow: 0 0px 10px #00000033; 
+}
+@media (max-width:700px) {
+    header {
+    position: static;
+
+    }
+}
+/*Mood Color*/
+.colorsBtn {
+    width: 25px;
+    padding: 0;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+#orange-mode {
+    background-color: #F97316;
+}
+
+#green-mode {
+    background-color: #52B788;
+}
+
+#navy-mode {
+    background-color: #334155;
+}
+
+/*NavBar*/
 .navbar-brand {
     color: var(--fontColor);
     font-size: 2.5rem;
     transition: 0.3s;
-
 }
 
 .nav-item a {
@@ -41,17 +71,7 @@ body {
 
 /*Start Hero Section*/
 /*Start Content Section*/
-body {
-    background-image: url(../images/background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
-}
-
-.content {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .content h1 {
     font-weight: bold;

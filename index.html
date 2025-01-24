@@ -19,11 +19,20 @@
 <body>
 
     <!-- Start Header -->
-    <header class="container my-3 pb-5">
+    <header class="container-fluid ">
         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+            <div class="container">
+                <div class="language-toggle">
+                    <button id="languageSwitcher" class="btn btn-secondary text-white">عربي</button>
+                </div>
+
                 <!-- Logo -->
                 <a class="navbar-brand" href="#"><img src="images/logo.svg" style="width: 120px;" alt=""></a>
+                <div class="buttons bg-white rounded shadow p-0">
+                    <button class="colorsBtn" id="orange-mode"> </button>
+                    <button class="colorsBtn" id="green-mode"> </button>
+                    <button class="colorsBtn" id="navy-mode"> </button>
+                </div>
                 <!-- Toggle Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +41,11 @@
                 <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-4">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                        <li class="nav-item"><a data-lang="home" class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a data-lang="aboutUs" class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a data-lang="products" class="nav-link" href="#product">Product</a></li>
+                        <li class="nav-item"><a data-lang="contactUs" class="nav-link" href="#contact">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,18 +59,19 @@
 
             <!-- Start Content section -->
             <div class="content col-lg-5 col-md-10">
-                <h1>QAS</h1>
-                <p class="desc">Digital transformation of quality system</p>
-                <p class="hint">Integrated Intelligent Quality System (i2QS) software for handling quality management
+                <h1 data-lang="title">QAS</h1>
+                <p data-lang="desc" class="desc">Digital transformation of quality system</p>
+                <p data-lang="hint" class="hint">Integrated Intelligent Quality System (i2QS) software for handling
+                    quality management
                     system and accreditation standards implementation.</p>
-                <button class="btn px-4 py-2">Learn more</button>
+                <button class="btn px-4 py-2" data-lang="learnMore">Learn More</button>
             </div>
             <!-- End Content section -->
 
             <!-- Start Carousel section -->
             <div class="images col-lg-5 col-md-10 mt-4 ">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
-                    data-bs-interval="2000">
+                    data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -81,43 +92,48 @@
                         <div class="carousel-item">
                             <img src="images/undraw_react_ytu4.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p data-lang="carousel1">A dynamic framework enhancing performance and quality in
+                                    application development.</p>
                             </div>
                         </div>
                         <div class="carousel-item active">
                             <img src="images/undraw_learning-sketchingsh.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p data-lang="carousel2">Continuous learning is the foundation of quality improvement
+                                    and excellence.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/undraw_personal-goals_f9bb.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <p data-lang="carousel3">Personal goals aligned with quality reflect sustainable
+                                    success.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/undraw_applications_h0mq.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p data-lang="carousel4">Integrated applications boosting operational efficiency and
+                                    quality outcomes.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/undraw_speed-test_wdyh.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p data-lang="carousel5">Performance testing: Speed and accuracy for achieving top
+                                    quality standards.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/undraw_updated-resume_287i.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p data-lang="carousel6">Constant updates: A cornerstone for quality enhancement.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/undraw_website_27ju.svg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p data-lang="carousel7">A professional website reflecting high-quality standards.</p>
                             </div>
                         </div>
                     </div>
@@ -133,11 +149,13 @@
         <section class="about container-fluid p-4 my-5 " id="about">
             <div class="about-us container row justify-content-between m-auto align-items-center">
                 <div class="about-cont col-lg-6 col-md-10 col-sm-12">
-                    <h3 class="py-3">About Us</h3>
-                    <p>QAS was established in 2014, based in Cairo, Egypt.We provide a complete consultation and
+                    <h3 data-lang="aboutUs" class="py-3">About Us</h3>
+                    <p data-lang="about_text">QAS was established in 2014, based in Cairo, Egypt.We provide a complete
+                        consultation and
                         software solutions to the healthcare organizations in order to enhance the provided services and
                         to facilitate the process of quality management system implementation.</p>
-                    <p>QAS Our solutions and services comply with the national and international quality and
+                    <p data-lang="about_text2">QAS Our solutions and services comply with the national and international
+                        quality and
                         accreditation standard/s as well as the applicable guide lines.</p>
                 </div>
                 <div class="about-image col-lg-5 col-md-12 col-sm-12">
@@ -145,12 +163,14 @@
                 </div>
             </div>
             <div class="why container-fluid  d-flex flex-column justify-content-center align-items-center py-5 my-4 ">
-                <h3 class=" position-relative ">Why Choose Us ?</h3>
+                <h3 class=" position-relative " data-lang="why_text">Why Choose Us ?</h3>
                 <div class="cards container  row  py-5 gap-5 justify-content-center">
                     <div class="card col-lg-4 col-md-6 col-sm-12">
                         <div class="card-body p-4">
-                            <h4 class="card-title py-3"> <i class="fa-solid fa-book-atlas"></i> Experience</h4>
-                            <p class="card-text">QAS team has a long experience in process enhancement, workflow,
+                            <h4 class="card-title py-3" data-lang="experience"> <i class="fa-solid fa-book-atlas"></i>
+                                Experience</h4>
+                            <p class="card-text" data-lang="why_experience_text">QAS team has a long experience in
+                                process enhancement, workflow,
                                 software development as well as quality and accreditation. We are committed to
                                 collaborate
                                 with our customers to be a partner in success and for seeking for excellence.</p>
@@ -158,16 +178,19 @@
                     </div>
                     <div class="card col-lg-4 col-md-6 col-sm-12">
                         <div class="card-body p-4">
-                            <h4 class="card-title py-3"> <i class="fa-solid fa-eye"></i> Vision</h4>
-                            <p class="card-text">We aim to be a leader service provider that support the integration of
+                            <h4 class="card-title py-3" data-lang="vision"> <i class="fa-solid fa-eye"></i> Vision</h4>
+                            <p class="card-text" data-lang="why_vision_text">We aim to be a leader service provider that
+                                support the integration of
                                 the healthcare processes and quality system implementation through digital
                                 transformation.</p>
                         </div>
                     </div>
                     <div class="card col-lg-3 col-md-6 col-sm-12">
                         <div class="card-body p-4">
-                            <h4 class="card-title py-3"> <i class="fa-solid fa-list-check"></i> Mission</h4>
-                            <p class="card-text">QAS is a service provided in the field of software and consultation
+                            <h4 class="card-title py-3" data-lang="mission"> <i class="fa-solid fa-list-check"></i>
+                                Mission</h4>
+                            <p class="card-text" data-lang="why_mission_text">QAS is a service provided in the field of
+                                software and consultation
                                 services related to healthcare sector.</p>
                         </div>
                     </div>
@@ -191,8 +214,8 @@
         <!-- Start Products Section -->
         <section class="container-fluid py-5" id="product">
             <div class="container pb-5 products">
-                <h3>Products</h3>
-                <p>Explore our products</p>
+                <h3 data-lang="products">Products</h3>
+                <p data-lang="Explore">Explore our products</p>
             </div>
             <div class="buttons container">
                 <button class="btn first-btn me-3 ">
@@ -202,11 +225,12 @@
                 </button>
             </div>
             <div class="button-content p-4 my-5 rounded-5 container">
-                <h4>IQPS</h4>
-                <p>IQPS is an integrated, intelligent and customized software can be applied to implement the quality
+                <h4 data-lang="iqps_title">IQPS</h4>
+                <p data-lang="iqps_text">IQPS is an integrated, intelligent and customized software can be applied to
+                    implement the quality
                     management system in the healthcare organizations.
                 </p>
-                <p class="ps-4">
+                <p class="ps-4" data-lang="iqps_benefits">
                     IQPS ensures and maintains that:
                     Total digitalization of QMS and accreditation requirements
                     Compliance with quality and accreditation standards.
@@ -221,16 +245,16 @@
         <!-- End Products Section -->
     </main>
     <!-- Start Footer -->
-    <footer class="py-5 mt-4 container-fluid ">
+    <footer class="py-5 mt-4 container-fluid shadow">
 
         <div class="container row justify-content-center align-content-between m-auto ">
             <div class="contact col-lg-3 col-md-4 col-sm-12" id="contact">
-                <h5>Contact Info</h5>
-                <p class="contact-phone mb-0 pb-0">Phone:+20 0100000000</p>
-                <p class="contact-address ">
+                <h5 data-lang="contact_info_title">Contact Info</h5>
+                <p class="contact-phone mb-0 pb-0" data-lang="contact_phone">Phone:+20 0100000000</p>
+                <p class="contact-address " data-lang="contact_address">
                     Address: Arkan Building 4, floor 4, Regus office# 307, Sheikh Zayed, Giza, Egypt.
                 </p>
-                <p class="contact-phone pt-4 pb-0">Follow us on:</p>
+                <p class="contact-phone pt-4 pb-0" data-lang="contact_follow_us">Follow us on:</p>
                 <div class="social-icons w-50 d-flex justify-content-around">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -240,48 +264,56 @@
             </div>
 
             <div class="links2 col-lg-3 col-md-4 col-sm-12">
-                <h5 class="ps-4">Contact Info</h5>
+                <h5 class="ps-4" data-lang="contact_info_title">Contact Info</h5>
                 <ul class="">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#product">Products</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about" data-lang="aboutUs">About Us</a></li>
+                    <li><a href="#product" data-lang="products">Products</a></li>
+                    <li><a href="#contact" data-lang="contactUs">Contact Us</a></li>
                 </ul>
             </div>
 
             <div class="links3 col-lg-3 col-md-4 col-sm-12">
-                <h6 class="ps-4">Help Center</h6>
+                <h6 class="ps-4" data-lang="footer_help_title">Help Center</h6>
                 <ul class="">
-                    <li><a href="#">FQ&A</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Cookies Settings</a></li>
+                    <li><a href="#" data-lang="footer_help_links_faq">FQ&A</a></li>
+                    <li><a href="#" data-lang="footer_help_links_customer_service">Customer Service</a></li>
+                    <li><a href="#" data-lang="footer_help_links_privacy_policy">Privacy Policy</a></li>
+                    <li><a href="#" data-lang="footer_help_links_terms_of_use">Terms of Use</a></li>
+                    <li><a href="#" data-lang="footer_help_links_cookies_settings">Cookies Settings</a></li>
                 </ul>
             </div>
             <div class="inputs col-lg-3 col-md-12 col-sm-12">
-                <h6>Let's Stay in Touch</h6>
+                <h6 data-lang="footer_stay_in_touch">Let's Stay in Touch</h6>
                 <form action="">
-                    <input class="form-control mb-3" type="email" name="email" placeholder="Your Email Address">
-                    <input class="form-control mb-3" type="text" name="phone" placeholder="Your Phone Number">
-                    <textarea class="form-control mb-3" name="comment" placeholder="Write Your Comment Here"></textarea>
-                    <button class="btn " type="submit">Submit</button>
+                    <input data-lang="footer_email_placeholder" class="form-control mb-3" type="email" name="email"
+                        placeholder="Your Email Address">
+                    <input data-lang="footer_phone_placeholder" class="form-control mb-3" type="text" name="phone"
+                        placeholder="Your Phone Number">
+                    <textarea data-lang="footer_comment_placeholder" class="form-control mb-3" name="comment"
+                        placeholder="Write Your Comment Here"></textarea>
+                    <button class="btn " type="submit" data-lang="footer_submit_button">Submit</button>
                 </form>
             </div>
 
         </div>
         <hr />
         <div class="container d-flex justify-content-between">
-            <div class="col-xs-12 col-md-6 col-lg-6">QAS 2014 -2023</div>
-            <div class="col-xs-12 col-md-6 col-lg-6 d-flex justify-content-md-end justify-content-lg-end">
-                All rights Reserved @QAS
+            <div class="col-xs-12 col-md-6 col-lg-6" data-lang="footer_copyright">QAS 2014 -2023</div>
+            <div class="col-xs-12 col-md-6 col-lg-6 d-flex justify-content-md-end justify-content-lg-end"
+                data-lang="footer_rights">
+                All rights Reserved QAS
             </div>
         </div>
+        <p data-lang="devloped" class="pt-4 text-center text-danger">Devloped By Ismail Badawy</p>
+
     </footer>
     <!-- End Footer -->
 
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/mood.js"></script>
     <script src="js/main.js"></script>
 </body>
 
