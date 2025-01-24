@@ -1,0 +1,52 @@
+<svg width="594" height="283" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_20_blur">
+   <feGaussianBlur stdDeviation="5.9" in="SourceGraphic"/>
+  </filter>
+  <filter id="svg_28_blur">
+   <feGaussianBlur stdDeviation="0.2" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <!-- Code injected by live-server -->//
+ <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(-0.11218 301.5 146)" stroke="null" id="svg_20" d="m35.10793,138.94483c0,-60.11854 43.4205,-110.63832 95.0909,-110.63832l342.60232,0c51.6704,0 95.0909,50.51978 95.0909,110.63832l0,14.11033c0,60.11854 -43.4205,110.63832 -95.0909,110.63832l-342.60232,0c-51.6704,0 -95.0909,-50.51978 -95.0909,-110.63832l0,-14.11033z" filter="url(#svg_20_blur)" opacity="undefined" stroke-width="0" fill="#828791"/>
+  <text filter="url(#svg_28_blur)" transform="matrix(1.71123 0 0 2.48389 -49.0333 -248.887)" stroke="null" xml:space="preserve" text-anchor="start" font-family="'Vollkorn'" font-size="30" id="svg_26" y="163.71039" x="59.28815" stroke-width="0" fill="#012b7f">Quality</text>
+  <text filter="url(#svg_28_blur)" transform="matrix(1.30776 0 0 1.98993 -75.9924 -177.312)" stroke="null" xml:space="preserve" text-anchor="start" font-family="'Vollkorn'" font-size="30" id="svg_27" y="167.4226" x="228.05963" stroke-width="0" fill="#f9f9f9">Assurance</text>
+  <text transform="matrix(1.50451 0 0 1.76543 -128.884 -131.659)" stroke="null" xml:space="preserve" text-anchor="start" font-family="'Vollkorn'" font-size="30" id="svg_28" y="162.52152" x="357.51191" stroke-width="0" fill="#025472">System</text>
+ </g></svg>

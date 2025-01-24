@@ -1,0 +1,87 @@
+/*Global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Main Colors*/
+    --whiteColor: #ffffffe5;
+    --blackColor: #000;
+    --grayColor:#333;
+    --cardColor:#f3f3f3;
+
+    /*==============================================*/
+
+    /*Green Mode*/
+    --mainColorBody: #F0FFF4;
+    --fontColor: #2D6A4F;
+    --seconderyColor: #95D5B2;
+    --btnColor: #52B788;
+    --hoverColor: #78d1a9c7;
+    --borderColor: #A3E635;
+
+    /*==============================================*/
+
+    /*Orange Mode*/
+    --mainColorBody: #FFF8F0;
+    --fontColor: #D97706;
+    --seconderyColor: #FDBA74;
+    --btnColor: #F97316;
+    --hoverColor: #f59958;
+    --borderColor: #FFEDD5;
+
+    /*==============================================*/
+
+    /*Golden Mode*/
+    --mainColorBody: #FFFBF0;
+    --fontColor: #B8860B;
+    --seconderyColor: #FFD700;
+    --btnColor: #F4A261;
+    --hoverColor: #f5ba8a;
+    --borderColor: #FFE4B5;
+
+    /*==============================================*/
+
+    /*Blue Mode*/
+    --mainColorBody: #F0F8FF;
+    --fontColor: #1E3A8A;
+    --seconderyColor: #60A5FA;
+    --btnColor: #3B82F6;
+    --hoverColor: #67a0fc;
+    --borderColor: #BFDBFE;
+
+    /*==============================================*/
+
+    /*Navy Mode*/
+    --mainColorBody: #F8FAFC;
+    --fontColor: #1E293B;
+    --seconderyColor: #64748B ;
+    --btnColor:  #334155;
+    --hoverColor:  #4e6380;
+    --borderColor: #CBD5E1;
+
+    /*==============================================*/
+    /*MintGreen Mode*/
+    /* --mainColorBody: #F0FFF4;
+    --fontColor: #087F5B;
+    --seconderyColor: #81E6D9;
+    --btnColor: #38B2AC;
+    --hoverColor: #51cec8;
+    --borderColor: #B2F5EA; */
+}
+
+a {
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

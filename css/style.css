@@ -1,0 +1,238 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Header Section*/
+.navbar-brand {
+    color: var(--fontColor);
+    font-size: 2.5rem;
+    transition: 0.3s;
+
+}
+
+.nav-item a {
+    color: var(--fontColor);
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s;
+    background-color: var(--fontColor);
+}
+
+.nav-item a:hover {
+    color: var(--seconderyColor);
+}
+
+.nav-item a:hover::before {
+
+    width: 80%;
+    background-color: var(--seconderyColor)
+}
+
+/*End Header Section*/
+
+/*Start Hero Section*/
+/*Start Content Section*/
+body{
+    background-image: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--grayColor);
+
+}
+
+.content .desc {
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--fontColor);
+}
+
+.content .hint {
+    color: var(--seconderyColor);
+}
+
+.content button {
+    background-color: var(--btnColor);
+    color: var(--whiteColor);
+    transition: all 0.3s;
+}
+
+.content button:hover {
+    background-color: var(--hoverColor);
+}
+
+/*End Content Section*/
+
+/* Start Carousel Section */
+.carousel-indicators button:hover {
+    background-color: var(--seconderyColor);
+    opacity: 0.8;
+}
+
+.carousel-indicators .active {
+    background-color: var(--fontColor);
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+.carousel-item p {
+    position: absolute;
+    top: 55px;
+    color: var(--fontColor);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carousel-item img {
+    opacity: 0.8;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+/* End Carousel Section */
+/*End Hero Section*/
+
+/* Start About Section */
+.about-cont h3 {
+    position: relative;
+    color: var(--fontColor);
+    font-size: 2rem;
+}
+
+.about-cont h3::before {
+    position: absolute;
+    content: "QAS";
+    top: -50px;
+    left: -40px;
+    opacity: 0.10;
+    font-size: 6rem;
+}
+
+.about-cont p {
+    color: var(--seconderyColor);
+}
+
+.why h3 {
+    color: var(--fontColor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.why h3::before {
+    position: absolute;
+    top: -65px;
+    left: -20px;
+    content: "QAS";
+    font-size: 6rem;
+    opacity: 0.10;
+}
+
+.card {
+    background-color: var(--cardColor);
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: var(--btnColor);
+}
+
+.card-body {
+    color: var(--grayColor);
+    opacity: 0.8;
+    transition: 0.3s;
+
+}
+
+.card:hover .card-body {
+    color: var(--whiteColor);
+    opacity: 1;
+
+}
+
+/* End About Section */
+.products h3 {
+    color: var(--fontColor);
+    font-size: 2.2rem;
+}
+
+.products p {
+    color: var(--grayColor);
+}
+
+.buttons .first-btn {
+    background-color: var(--btnColor);
+    color: var(--whiteColor);
+}
+
+.buttons .first-btn:focus {
+    background-color: var(--whiteColor);
+    border: 1px solid var(--fontColor);
+    color: var(--fontColor);
+}
+
+.buttons .second-btn {
+    background-color: var(--whiteColor);
+    color: var(--fontColor);
+    border: 1px solid var(--fontColor);
+}
+
+.buttons .second-btn:focus {
+    background-color: var(--btnColor);
+    color: var(--whiteColor);
+    border: none;
+}
+
+.button-content {
+    background-color: var(--cardColor);
+}
+
+.button-content h4 {
+    color: #474747d2;
+
+}
+
+.button-content p {
+    color: #33333370;
+}
+
+footer {
+    background-color: var(--btnColor);
+    color: var(--whiteColor);
+}
+
+footer a {
+    color: var(--whiteColor);
+
+}
+
+.inputs button {
+    background-color: var(--whiteColor);
+}
+
+.inputs button:hover {
+    background-color: var(--hoverColor);
+}
