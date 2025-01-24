@@ -47,7 +47,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(../images/background-navy.svg) ;
+    background-image: url(./images/background-navy.svg) ;
     background-repeat: no-repeat;
     background-size: cover;
 
