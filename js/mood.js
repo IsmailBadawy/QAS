@@ -1,4 +1,4 @@
-// Define the color modes
+// color modes
 const orangeMode = {
     mainColorBody: '#FFF8F0',
     fontColor: '#D97706',
