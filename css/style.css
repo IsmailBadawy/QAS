@@ -13,7 +13,7 @@ body {
 .nav-item a {
     color: var(--fontColor);
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .nav-item a::before {
@@ -41,13 +41,14 @@ body {
 
 /*Start Hero Section*/
 /*Start Content Section*/
-body{
+body {
     background-image: url(../images/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
 }
+
 .content {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
