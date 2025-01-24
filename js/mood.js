@@ -6,7 +6,7 @@ const orangeMode = {
     btnColor: '#F97316',
     hoverColor: '#f59958',
     borderColor: '#FFEDD5',
-    backgroundImage: 'url(../images/background-orange.svg)'
+    backgroundImage: 'url(./images/background-orange.svg)'
 
 };
 
@@ -17,7 +17,7 @@ const greenMode = {
     btnColor: '#52B788',
     hoverColor: '#78d1a9c7',
     borderColor: '#A3E635',
-    backgroundImage: 'url(../images/background-green.svg)'
+    backgroundImage: 'url(./images/background-green.svg)'
 
 };
 
@@ -28,7 +28,7 @@ const navyMode = {
     btnColor: '#334155',
     hoverColor: '#4e6380',
     borderColor: '#CBD5E1',
-    backgroundImage: 'url(../images/background-navy.svg)'
+    backgroundImage: 'url(./images/background-navy.svg)'
 
 };
 
