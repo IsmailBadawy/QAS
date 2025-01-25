@@ -28,6 +28,13 @@ const texts = {
         iqps_title: "IQPS",
         iqps_text: "IQPS is an integrated, intelligent and customized software can be applied to implement the quality management system in the healthcare organizations.",
         iqps_benefits: "IQPS ensures and maintains that: Total digitalization of QMS and accreditation requirements; Compliance with quality and accreditation standards; Integrity of the quality management system; Data security and confidentiality; Saving time during the implementation, data collection, and analysis; Easy handling of QMS Documentation and implementation; Providing accurate reports at all levels of management.",
+        ilap_title: "About iLab-LIS",
+        ilap_head1: "Real time collaboration",
+        ilap_text1: "  ILAB LIS empowers users to store information on a protected Database server which drives around as a focal vault. Users can access and offers their information continuously with their associates over different research centers utilizing any internet ready gadgets.",
+        ilap_head2: "Simply configurable",
+        ilap_text2: "ILAB LIS is intended to convey adaptability and measured quality. The vigorous design enables user to create work processes, reports and application to meet your labs one of a kind necessity.",
+        ilap_head3: "Data Security",
+        ilap_text3: "Security of research data is the topmost requirements of all labs. encourages secure access of your information 24 X 7.",
         contact_info_title: "Contact Info",
         contact_phone: "Phone: +20 0100000000",
         contact_address: "Address: Arkan Building 4, floor 4, Regus office# 307, Sheikh Zayed, Giza, Egypt.",
@@ -48,7 +55,7 @@ const texts = {
         footer_submit_button: "Submit",
         footer_copyright: "QAS 2014 -2023",
         footer_rights: "All rights Reserved @QAS",
-        devloped:"Devloped By Ismail Badawy"
+        devloped: "Devloped By Ismail Badawy"
     },
     ar: {
         title: "نظام الجودة الشامل",
@@ -79,6 +86,13 @@ const texts = {
         iqps_title: "نظام IQPS",
         iqps_text: "نظام IQPS هو برنامج ذكي ومتكامل ومخصص يمكن تطبيقه لتنفيذ نظام إدارة الجودة في المؤسسات الصحية.",
         iqps_benefits: "نظام IQPS يضمن ويحافظ على: الرقمنة الكاملة لمتطلبات نظام إدارة الجودة والاعتماد؛ الالتزام بمعايير الجودة والاعتماد؛ تكامل نظام إدارة الجودة؛ أمان وسرية البيانات؛ توفير الوقت أثناء التنفيذ وجمع البيانات وتحليلها؛ سهولة التعامل مع توثيق نظام إدارة الجودة وتنفيذه؛ تقديم تقارير دقيقة على جميع مستويات الإدارة.",
+        ilap_title: "حول iLab-LIS",
+        ilap_head1: "التعاون في الوقت الفعلي",
+        ilap_text1: "يوفر iLab-LIS للمستخدمين إمكانية تخزين المعلومات على خادم قاعدة بيانات محمي يعمل كمرجع مركزي. يمكن للمستخدمين الوصول إلى معلوماتهم ومشاركتها في الوقت الفعلي مع زملائهم عبر مختبرات مختلفة باستخدام أي جهاز متصل بالإنترنت.",
+        ilap_head2: "سهل التهيئة",
+        ilap_text2: "تم تصميم iLab-LIS لتوفير المرونة والجودة المعيارية. يتيح التصميم القوي للمستخدم إنشاء سير عمل، وتقارير، وتطبيقات تلبي المتطلبات الفريدة لمختبرك.",
+        ilap_head3: "أمان البيانات",
+        ilap_text3: "يُعد أمان بيانات البحث من أعلى المتطلبات لجميع المختبرات. يشجع على الوصول الآمن إلى معلوماتك على مدار الساعة طوال أيام الأسبوع.",
         contact_info_title: "معلومات التواصل",
         contact_phone: "الهاتف: +20 0100000000",
         contact_address: "العنوان: مبنى أركان 4، الطابق 4، مكتب ريجس #307، الشيخ زايد، الجيزة، مصر.",
@@ -99,7 +113,7 @@ const texts = {
         footer_submit_button: "إرسال",
         footer_copyright: "QAS 2014 -2023",
         footer_rights: "جميع الحقوق محفوظة @QAS",
-        devloped:"تم التصميم والتطوير بواسطة إسماعيل بدوي"
+        devloped: "تم التصميم والتطوير بواسطة إسماعيل بدوي"
     }
 };
 

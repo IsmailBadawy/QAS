@@ -98,6 +98,7 @@ header {
 
 .content button:hover {
     background-color: var(--hoverColor);
+    color: var(--whiteColor);
 }
 
 /*End Content Section*/
@@ -116,14 +117,14 @@ header {
 
 .carousel-item p {
     position: absolute;
-    top: 55px;
+    top: 50px;
     color: var(--fontColor);
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .carousel-item img {
-    opacity: 0.8;
+    opacity: 0.9;
     height: 100%;
     width: auto;
     object-fit: cover;
@@ -131,6 +132,11 @@ header {
 
 .carousel-inner {
     height: 500px;
+}
+@media (max-width:700px) {
+    .carousel-item p{
+        top: 100px;
+    }
 }
 
 /* End Carousel Section */
@@ -209,6 +215,7 @@ header {
     color: var(--whiteColor);
 }
 
+
 .buttons .first-btn:focus {
     background-color: var(--whiteColor);
     border: 1px solid var(--fontColor);
@@ -221,7 +228,8 @@ header {
     border: 1px solid var(--fontColor);
 }
 
-.buttons .second-btn:focus {
+
+.buttons .second-btn:focus  {
     background-color: var(--btnColor);
     color: var(--whiteColor);
     border: none;
@@ -231,7 +239,7 @@ header {
     background-color: var(--cardColor);
 }
 
-.button-content h4 {
+.button-content h4 ,.button-content h3 {
     color: #474747d2;
 
 }
